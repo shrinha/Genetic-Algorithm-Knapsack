@@ -24,31 +24,31 @@ P (total possible maximum value)
 
 # The Code
 ## Encoding
-The solution is encodes as a binary string consisting of 0's and 1's. A 1 at ith postition represents that the ith item is considered. Conversely a 0 represents its absence.
+The solution is encoded as a binary string consisting of 0's and 1's. A 1 at ith postition represents that the ith item is considered. Conversely a 0 represents its absence.
 This makes up the genotype of any individual in the population.
 
 ## Generate Random Population
 https://github.com/shrinha/Genetic-Algorithm-Knapsack/blob/7048b5bc2cfda8fd283b6989ed85e12d926fd2d0/Genetic%20Algorithm_Knapsack.py#L3-L11
 
 ## Fitness Function
-The function calculates how good an indiviual is by calculating the value of that solution. However, if weight exceeds the capacity of the knapsack, its fitness is set to 0 as 
-the solution becomes infeasible.
+The function represents how good an indiviual is by calculating the value of the knapsack for that solution. However, if the weight exceeds the capacity of the knapsack, the solution becomes infeasible and its fitness is set to 0. 
+
 https://github.com/shrinha/Genetic-Algorithm-Knapsack/blob/7048b5bc2cfda8fd283b6989ed85e12d926fd2d0/Genetic%20Algorithm_Knapsack.py#L14-L24
 
 ## Selection
-Calculates the fitness of entire population, normalises it and then selects two parents from it with the probability proportional to their fitness value. 
+Calculates the fitness of the entire population, normalises it and then selects two parents from it with  probability proportional to their fitness values. 
 https://github.com/shrinha/Genetic-Algorithm-Knapsack/blob/7048b5bc2cfda8fd283b6989ed85e12d926fd2d0/Genetic%20Algorithm_Knapsack.py#L26-L37
 
 ## Crossover 
-Generates children from the parent by selecting a random index of the binary string and crossing strings
+Generates children from the parent by selecting a random index and crossing both the binary strings at the said index
 https://github.com/shrinha/Genetic-Algorithm-Knapsack/blob/7048b5bc2cfda8fd283b6989ed85e12d926fd2d0/Genetic%20Algorithm_Knapsack.py#L26-L37
 
 ## Mutation
-Mutates the string by flipping a random bit in the binary string
+Mutates the string by flipping a random bit in it.
 https://github.com/shrinha/Genetic-Algorithm-Knapsack/blob/7048b5bc2cfda8fd283b6989ed85e12d926fd2d0/Genetic%20Algorithm_Knapsack.py#L47-L52
 
 ## Subsequent Generations
-The entire process turns for given number of generations. Each Generation consists of Selection of parents, Crossover with probability uc, and mmutation with probability um.
+The entire process runs for a given number of generations. Each Generation consists of Selection of parents, Crossover with probability uc, and mutation with probability um.
 The children are then added to the population pool. Once this process finishes, the best individual is selected from the final population.
 https://github.com/shrinha/Genetic-Algorithm-Knapsack/blob/7048b5bc2cfda8fd283b6989ed85e12d926fd2d0/Genetic%20Algorithm_Knapsack.py#L92-L103 
 
