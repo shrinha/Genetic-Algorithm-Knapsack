@@ -47,4 +47,8 @@ https://github.com/shrinha/Genetic-Algorithm-Knapsack/blob/7048b5bc2cfda8fd283b6
 Mutates the string by flipping a random bit in the binary string
 https://github.com/shrinha/Genetic-Algorithm-Knapsack/blob/7048b5bc2cfda8fd283b6989ed85e12d926fd2d0/Genetic%20Algorithm_Knapsack.py#L47-L52
 
+## Subsequent Generations
+The entire process turns for given number of generations. Each Generation consists of Selection of parents, Crossover with probability uc, and mmutation with probability um.
+The children are then added to the population pool. Once this process finishes, the best individual is selected from the final population.
+https://github.com/shrinha/Genetic-Algorithm-Knapsack/blob/7048b5bc2cfda8fd283b6989ed85e12d926fd2d0/Genetic%20Algorithm_Knapsack.py#L92-L103 
 
